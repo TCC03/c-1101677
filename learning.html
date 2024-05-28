@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工作內容</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/work.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="aos-master/dist/aos.css" rel="stylesheet">
+    <script src="aos-master/dist/aos.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#hide2').hide();
+            AOS.refresh();
+            $('#h1').on("click", function (e) {
+                $('#hide1').show();
+                $('#hide2').hide();
+                AOS.refresh();
+            });
+            $('#h2').on("click", function (e) {
+                $('#hide2').show();
+                $('#hide1').hide();
+                AOS.refresh();
+            });
+            
+        });
+    </script>
+    <style>
+        .navbar-nav .nav-link {
+            color: #bdbdbd !important;
+        }
+
+        body {
+            background: radial-gradient(circle at 100%, #b7b1b170, #171616),  /* fallback for old browsers */
+                        radial-gradient(farthest-side at top left, #2b2929, #0a0a0a70),
+                        radial-gradient(farthest-side at top left, #252323, #0a0a0a70),
+                        radial-gradient(farthest-corner at top right, #282626, #0a0a0a70),
+                        radial-gradient(farthest-corner at top right, #413d3d, #24232370);
+        }
+
+        .container {
+            width: auto;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+
+        .text {
+            color: #bdbdbd;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm" style="background-color: #0a0a0a70;">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+              <a href="index.html"><img src="img/logo.png" width="250" height="70" alt="logo"></a>
+            </div>
+            <button class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1"></ul>
+                <ul class="navbar-nav flex-grow-3">
+                    <li class="nav-item">
+                        <a href="work.html" class="nav-link text-dark">工作內容</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="learning.html" class="nav-link text-dark">學習</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="experience.html" class="nav-link text-dark">心得感想</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="suggest.html" class="nav-link text-dark">給系上的建議</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" align="center">
+        <a class="a1" id="h1">技術面</a>
+        <a class="a1" id="h2">非技術面</a>
+    </div>
+    <div id="hide1">
+        <h1 style="text-align: center; padding-top: 1.5em;"  class="text">技術面</h1>
+    <div class="container"  data-aos="zoom-in">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 order-2 order-md-1">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 mt-3 mt-md-auto">
+                    <h3 class="text">Excel匯入匯出功能</h3>
+                    <div class="second-content text">
+                        在實習初期時主管給了四個作業，第一個作業主要是要做出系統的查詢及編輯頁面以及Excel匯出功能，編輯頁面包括了新增刪除及修改的功能，
+                        這個部分對於我來說沒有很困難，不過由於我們網頁程式設計學的是MVC架構，所以沒有接觸過web form的情況下還是需要理解一下程式，但比起MVC寫起來是輕鬆很多，但在Excel匯出的部分就是完全沒有接觸過的地方，要先建立一個Excel表單結構並把從資料庫中抓取的資料insert到欄位中，在之後的案子中也有接觸到要使用Excel匯入的功能，比匯出還複雜了許多，還要去比對相同捐款人的資料並且判斷要覆蓋還是要新增新的一筆資料。
+                        很多機構的匯入匯出功能都會有不同的需求，常常會需要調整到這個部分。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 order-1 order-md-2">
+              <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/donate.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/online.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/eacncer2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container" data-aos="fade-down-left">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 order-1 order-md-1">
+                    <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/tr.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/trexcel.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                  </div>
+              <div class="col-sm-12 col-md-6 order-2 order-md-2">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 mt-3 mt-md-auto">
+                      <h3 class="text">中斷點DeBug</h3>
+                      <div class="second-content text">
+                        在進公司之前程式的助教課有教過怎麼使用中斷點來Debug，但是在學校寫的程式程式碼都很短，我通常都直接下一個變數來判斷哪裡有問題，而在公司的程式中沒辦法直接用變數來判斷就必須要用中斷點來執行，
+                        剛開始主管教我的時候也是聽得一頭霧水，直到開始實作後很常會遇到程式出問題就越來越了解要怎麼使用中斷點這個功能，還有接觸到一個案子是要更改電子收據的密碼，電子收據會寄到郵件中，如果有輸入身分證要使用身分證當密碼，沒有的話使用0000當作預設密碼，
+                        一開始我完全不知道電子收據是從哪個api寄出的並且要去哪裡找到收據的連結，我要怎麼去測試密碼是否有改成功，因為我們使用的local端也沒辦法真的寄出郵件，所以我就下了很多中斷點，看按下寄出後程式會怎麼運行，之後也讓我找到了他會存進資料庫中，但我最後還是沒找到整個寄出的pdf檔網址，
+                        所以還是去問了同事該怎麼找到寄出的pdf檔，同事就跟我一起下了一次中斷點，帶著我一起跑一次程式讓我知道那個pdf檔最後會存到哪裡，
+                        經過這個經驗也讓我更加了解中斷點的使用以及他的重要性跟方便性性。
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="container" data-aos="zoom-in-down">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 order-2 order-md-1">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 mt-3 mt-md-auto">
+                        <h3 class="text">前端ajax</h3>
+                        <div class="second-content text">
+                            以前在做網頁的時候通常前端都只有做出畫面的樣子，只會調整版面之類的東西，但在公司的程式中用了很多ajax在不讓頁面更新的情況下讀取用前端來讀取資料庫資料，公司的標準版後台系統中有一個捐物功能可以在程式中新增捐物他會立即顯示新增的資料在畫面中，有一個客戶的需求是要把這個功能用到前台的線上捐贈內，
+                            我們標準版系統的前台沒有這個功能，我想了很久可以用什麼方式在前台新增資料後也要在後台能撈出來，最後我選擇前後台共用同一支ajax讓他把資料新增到後台的捐物資料表內，並新增一個資料行來把從前台來的捐物id存進去來判斷資料是從前台來的還是後台來確保我在後台的詳細資料中不會誤撈資料，這個案子也讓我更上手有關ajax的使用。
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 order-1 order-md-2">
+                  <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="img/donate.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/online.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/eacncer2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+      </div>
+     <div id="hide2">
+      <h1 style="text-align: center; padding-top: 1.5em;"  class="text">非技術面</h1>
+      <div class="container" data-aos="flip-right">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 order-2 order-md-1">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 mt-3 mt-md-auto">
+                  <h3 class="text">時間管理</h3>
+                  <div class="second-content text">
+                    在這段時間讓我學習最多的莫過於時間上的管理，一週五天的時間中，有三天的時間要待在公司內，剩下兩天的時間還要處理學校課業的部分，而且因為我是轉學生的關係，
+                    要重修的課程也不少，在學校的這兩天必須把課程安排妥當，已經到了大三下了如果沒有規劃好時間，把課程、作業安排好，被當了很可能就會面臨延畢的風險。在學校剩餘的時間也不多了，
+                    畢業後如果進入職場能夠自由控制的時間一定是更少，所以要怎麼有效的管理時間，讓自己兼顧學業、實習、以及讓自己放鬆的休閒活動便是很重要的課題。
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 order-1 order-md-2">
+            <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/donate.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/online.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/eacncer2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="container" data-aos="zoom-in-down">
+          <div class="row">
+              <div class="col-sm-12 col-md-6 order-1 order-md-1">
+                  <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="img/tr.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/trexcel.jpg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                  </div>
+                </div>
+            <div class="col-sm-12 col-md-6 order-2 order-md-2">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 mt-3 mt-md-auto">
+                    <h3 class="text">溝通能力</h3>
+                    <div class="second-content text">
+                      在這段時間讓我學習最多的莫過於時間上的管理，一週五天的時間中，有三天的時間要待在公司內，剩下兩天的時間還要處理學校課業的部分，而且因為我是轉學生的關係，
+                      要重修的課程也不少，在學校的這兩天必須把課程安排妥當，已經到了大三下了如果沒有規劃好時間，把課程、作業安排好，被當了很可能就會面臨延畢的風險。在學校剩餘的時間也不多了，
+                      畢業後如果進入職場能夠自由控制的時間一定是更少，所以要怎麼有效的管理時間，讓自己兼顧學業、實習、以及讓自己放鬆的休閒活動便是很重要的課題。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div> 
+    <script>
+        AOS.init({
+            duration: 2000,
+            delay :300
+        });
+    </script>
+</body>
+</html>
+    

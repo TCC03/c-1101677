@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心得感想</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/work.css">
+    <style>
+        .navbar-nav .nav-link {
+            color: #bdbdbd !important;
+        }
+
+        body {
+            background: radial-gradient(circle at 100%, #b7b1b170, #171616),  /* fallback for old browsers */
+                        radial-gradient(farthest-side at top left, #2b2929, #0a0a0a70),
+                        radial-gradient(farthest-side at top left, #252323, #0a0a0a70),
+                        radial-gradient(farthest-corner at top right, #282626, #0a0a0a70),
+                        radial-gradient(farthest-corner at top right, #413d3d, #24232370);
+        }
+
+        .container {
+            width: auto;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+
+        .text {
+            color: #bdbdbd;
+        }
+        
+        .text1{
+            padding: 1em;
+            margin: 2em 0;
+            color: #bdbdbd;
+            border-left: solid 10px #a4d2ff;
+            margin-left: 8em;
+            height: 18px;
+            margin-bottom: 1em;
+            align-items: center;
+            display: flex;
+        }
+
+        .textbox{
+        width: 800px;
+        height: 250px;
+        margin:  0 auto;
+        text-align: center;
+        padding: 15px;
+        color: #afacac; 
+        background-color: #e4e9ee13; 
+        border-radius: 5px;
+        padding: 20px;
+        position: relative;
+        z-index: 0;
+        align-items: center;
+        display: flex;
+        text-align: justify;
+        }
+        .textbox:before{
+            border: 1px solid #fff; /* 白線 */
+            border-radius: 5px;
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin: 4px;
+            z-index: -1;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm" style="background-color: #0a0a0a70;">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <a href="index.html"><img src="img/logo.png" width="250" height="70" alt="logo"></a>
+            </div>
+            <button class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1"></ul>
+                <ul class="navbar-nav flex-grow-3">
+                    <li class="nav-item">
+                        <a href="work.html" class="nav-link text-dark">工作內容</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="learning.html" class="nav-link text-dark">學習</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="experience.html" class="nav-link text-dark">心得感想</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="suggest.html" class="nav-link text-dark">給系上的建議</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <h2 class="text" style="text-align: center;padding-top: 2em;">自我評估與心得感想</h2>
+    <h3 class="text1" style="border-left: solid 5px #868484; padding-top: 2em; padding: 1em;">一、自我評估</h3>
+        <figure class="text-center">
+            <blockquote class="blockquote">
+              <p class="textbox">當初在轉到元智之前就有聽說大三開始學校有實習的這個課程，那時候還不確定之後想走的到底是不是這條路，
+                所以就打算利用這個機會來看看自己對這個是否真的有興趣，在實際進入到業界實習後發現自己對這方面還是抱有蠻大的興趣的，讓我對未來比較沒有那麼迷惘了。
+                在能力上我認為自己還有很大的進步空間，也需要多培養一些耐性，有些程式做出來之後需要進行些測試，自己常常會沒有耐心就急著把程式交出去，雖然目前還沒遇到什麼太大的問題，
+                但是如果多測試幾次詳細檢查後也會比較保險。</p>
+            </blockquote>
+          </figure>
+    <h3 class="text1" style="border-left: solid 5px #868484; padding-top: 2em; padding: 1em;">二、心得感想</h3>
+    <figure class="text-center">
+        <blockquote class="blockquote">
+          <p class="textbox">當初在面試的時候主管問過我家裡到公司要多久的時間，我說我沒有去查，因為我覺得進入的公司能夠讓我學習到東西比較重要，
+            在進入公司後也確實學習到了很多的新技能與知識，不過也讓我了解到了在這個行業中，網頁架構會不斷地推陳出新，如果未來要待在這個產業中就必須持續不斷的精進自己，
+            利用時間學習更多的技能，科技不斷的創新發展我的能力也勢必要持續精進。</p>
+        </blockquote>
+      </figure>
+</body>
+</html>
