@@ -1,13 +1,14 @@
 body {
-    background:radial-gradient(circle at 100%,#b7b1b170,#171616),  /* fallback for old browsers */
-                radial-gradient(farthest-side at top left,#2b2929,#0a0a0a70),
-                radial-gradient(farthest-side at top left,#252323,#0a0a0a70),
-                radial-gradient(farthest-corner at top right,#282626,#0a0a0a70),
-                radial-gradient(farthest-corner at top right,#413d3d,#24232370);
+    background: radial-gradient(circle at 100%, #c6ad8970, #4571a1),  /* fallback for old browsers */
+    radial-gradient(farthest-side at top left, #2f1c0a, #1765a170),
+    radial-gradient(farthest-side at top left, #e1c7a4, #114b7470),
+    radial-gradient(farthest-corner at top right, #cab48d, #1080b770),
+    radial-gradient(farthest-corner at top right,  #d8be86,#29699270);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
+    min-height: 100vh;
 }
 .container1{
     display: flex;
@@ -25,7 +26,7 @@ body {
 .text {
     flex: 1;
     text-align: left;
-    color: #bdbdbd;      
+    color: #ffffff;      
 }
 .text h1, .text h3 {
     margin: 0.5em 0; 
@@ -48,10 +49,10 @@ body {
 
 .a1{
     position: relative;
-    padding: 20px 70px;
-    background-color: rgba(45,45,45,1);
+    padding: 20px 67px;
+    background-color: rgb(27, 47, 76);
     border-radius: 50px;
-    color: #999;
+    color: #ffffff;
     font-size: 1.5em;
     text-decoration: none;
     overflow: hidden;
@@ -96,7 +97,12 @@ a span{
 }
 .a1::after{
     content: '';
-    background-color: rgba(45,45,45,1);
+    background: radial-gradient(circle at 100%, #ebac7570, #326298),  /* fallback for old browsers */
+    radial-gradient(farthest-side at top left, #c3b3a3, #57748b70),
+    radial-gradient(farthest-side at top left, #dda55b, #2c85c970),
+    radial-gradient(farthest-corner at top right, #003390, #5288a670),
+    radial-gradient(farthest-corner at top right,  #02335c,#4ea3cd70);
+    display: flex;
     position: absolute;
     inset: 2px;
     border-radius: 48px;
