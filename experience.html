@@ -23,35 +23,38 @@
             color: #ffffff;
         }
         .container {
-    width: 800px;
-    margin: 0 auto;
-    position: relative;
-}
+            width: auto;
+            margin: 50px auto;
+            overflow: hidden;
+        }
 
 .text1 {
     padding: 1em;
+    margin: 2em 0;
     color: #ffffff;
     border-left: solid 5px #ffffff;
     height: 18px;
     margin-bottom: 1em;
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Background color to make text1 more visible */
+    margin-left: calc(50% - 400px); /* 使其与 .textbox 左对齐 */
 }
 
 .textbox {
     width: 800px;
     height: 250px;
+    margin: 0 auto;
+    text-align: justify;
     padding: 15px;
     color: #ffffff; 
-    background-color: rgba(255, 255, 255, 0.13); 
+    background-color: #ffffff13; 
     border-radius: 5px;
     position: relative;
     z-index: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: justify;
+    flex-direction: column;
 }
 
 .textbox:before {
@@ -60,13 +63,14 @@
     content: '';
     display: block;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     margin: 4px;
     z-index: -1;
 }
+
 
     </style>
 </head>
