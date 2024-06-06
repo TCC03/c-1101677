@@ -19,60 +19,55 @@
                         radial-gradient(farthest-corner at top right, #cab48d, #1080b770),
                         radial-gradient(farthest-corner at top right, #d8be86, #29699270);
         }
-
-        .container {
-            width: auto;
-            margin: 50px auto;
-            overflow: hidden;
-        }
-
         .text {
             color: #ffffff;
         }
-        
-        .text1{
-            padding: 1em;
-            margin: 2em 0;
-            color: #ffffff;
-            border-left: solid 5px #ffffff;
-            margin-left: 16em;
-            height: 18px;
-            margin-bottom: 1em;
-            align-items: center;
-            display: flex;
-            padding-top: 2em;
-            padding: 1em;
-        }
+        .container {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
 
-        .textbox{
-        width: 800px;
-        height: 250px;
-        margin:  0 auto;
-        text-align: center;
-        padding: 15px;
-        color: #ffffff; 
-        background-color: #e4e9ee13; 
-        border-radius: 5px;
-        padding: 20px;
-        position: relative;
-        z-index: 0;
-        align-items: center;
-        display: flex;
-        text-align: justify;
-        }
-        .textbox:before{
-            border: 1px solid #fff; /* 白線 */
-            border-radius: 5px;
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            margin: 4px;
-            z-index: -1;
-            }
+.text1 {
+    padding: 1em;
+    color: #ffffff;
+    border-left: solid 5px #ffffff;
+    height: 18px;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Background color to make text1 more visible */
+}
+
+.textbox {
+    width: 800px;
+    height: 250px;
+    padding: 15px;
+    color: #ffffff; 
+    background-color: rgba(255, 255, 255, 0.13); 
+    border-radius: 5px;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.textbox:before {
+    border: 1px solid #fff; /* 白線 */
+    border-radius: 5px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 4px;
+    z-index: -1;
+}
+
     </style>
 </head>
 <body>
