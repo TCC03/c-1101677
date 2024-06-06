@@ -1,22 +1,22 @@
 .container {
     position: relative;
     display: flex;
-    justify-content: center; /* 水平居中 */
+    justify-content: center; 
     align-items: center;
-    flex-wrap: nowrap; /* 不换行 */
-    gap: 50px; /* 卡片之间的水平间距 */
+    flex-wrap: nowrap; 
+    gap: 50px; 
     padding: 80px 50px;
-    width: 100%; /* 确保容器宽度充满页面 */
+    width: 100%; 
     box-sizing: border-box;
 }
 
 .container .card {
     position: relative;
     display: flex;
-    flex-direction: column; /* 确保内容垂直排列 */
+    flex-direction: column; 
     justify-content: flex-start;
     align-items: center;
-    width: 400px; /* 增加卡片宽度 */
+    width: 375px;
     height: 300px;
     background: #fff;
     border-radius: 20px;
@@ -29,15 +29,15 @@
 }
 
 .container .card .imgBx {
-    position: relative; /* 修改为相对定位 */
+    position: relative; 
     top: 20px;
-    width: 350px; /* 调整图片宽度以适应卡片的新宽度 */
+    width: 300px;
     height: 220px;
     background: #333;
     border-radius: 12px;
     overflow: hidden;
     transition: 0.5s;
-    margin-left: 0; /* 确保不偏移 */
+    margin-left: 0; 
 }
 
 .container .card:hover .imgBx {
