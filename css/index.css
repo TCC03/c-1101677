@@ -9,6 +9,7 @@ body {
     align-items: center;
     flex-direction: column; 
     min-height: 100vh;
+    font-family: Helvetica,"微軟正黑體";
 }
 .container1{
     display: flex;
@@ -97,7 +98,7 @@ a span{
 }
 .a1::after{
     content: '';
-    background: radial-gradient(circle at 100%, #ebac7570, #326298),  /* fallback for old browsers */
+    background: radial-gradient(circle at 100%, #feac6361, #326298),  /* fallback for old browsers */
     radial-gradient(farthest-side at top left, #c3b3a3, #57748b70),
     radial-gradient(farthest-side at top left, #dda55b, #2c85c970),
     radial-gradient(farthest-corner at top right, #003390, #5288a670),
