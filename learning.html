@@ -41,6 +41,7 @@
             box-sizing: border-box;
         }
         body {
+            font-family: Helvetica,"微軟正黑體";
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -78,6 +79,9 @@
                 <ul class="navbar-nav flex-grow-1"></ul>
                 <ul class="navbar-nav flex-grow-3">
                     <li class="nav-item">
+                      <a class="nav-link text-dark" href="Company.html">公司介紹</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-dark" href="work.html">工作內容</a>
                     </li>
                     <li class="nav-item">
@@ -99,8 +103,8 @@
     </div>
     <div id="hide1" onclick="">
     <div class="container">
-        <div class="card" style="--clr:#0f4472;">
-            <div class="imgBx" onclick="modalShow()">
+        <div class="card" style="--clr:#0f4472;" onclick="modalShow()">
+            <div class="imgBx imgBxafter">
                 <img src="./img/匯入1.png">
             </div>
             <div class="content">
@@ -151,14 +155,14 @@
 
 
         <div class="card" style="--clr:#0f4472;" onclick="modalShow1()">
-            <div class="imgBx">
-                <img src="./img/中斷點1.png">
+            <div class="imgBx imgBxafter">
+                <img src="./img/api.png">
             </div>
             <div class="content">
-                <h2>中斷點DeBug</h2>
-                <p>在進公司之前，程式的助教課有教過如何使用中斷點來DeBug，但在學校寫的程式碼都很短，我通常直接用變數來判斷哪裡有問題。
-                    而在公司工作的程式碼中，無法簡單地用變數來排查錯誤，必須使用中斷點來調試。一開始，主管教我時，我也聽得一頭霧水，但在開始實作後，很多網頁的功能都會經過好幾隻程式
-                    ，就必須使用中斷點來檢查執行流程，我也逐漸熟悉了如何使用中斷點這個功能。</p>
+                <h2>API串接</h2>
+                <p>在開發捐款系統的時候，要用API回傳資料給客戶，我才第一次學習API的寫法以及文件，也了解到怎麼拆解別的API傳遞的Json格式，
+                  也在後續的各個案子中接觸過不少使用API的案子其中包括使用Geolocation API來做線上打卡功能、使用Line Messaging API建置Line Bot
+                  也讓我越來越上手使用API接收與傳遞資料的過程。</p>
             </div>
         </div>
 
@@ -166,17 +170,20 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">中斷點DeBug</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">API串接</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="img/中斷點.png" class="d-block w-100" alt="...">
+                            <img src="img/api1.png" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="img/中斷點2.png" class="d-block w-100" alt="...">
+                            <img src="img/api2.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/api3.png" class="d-block w-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
@@ -196,7 +203,7 @@
 
 
         <div class="card" style="--clr:#0f4472;" onclick="modalShow2()">
-            <div class="imgBx">
+            <div class="imgBx imgBxafter">
                 <img src="./img/ajax1.png">
             </div>
             <div class="content">
